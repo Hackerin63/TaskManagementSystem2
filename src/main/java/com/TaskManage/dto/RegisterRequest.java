@@ -1,6 +1,6 @@
 package com.TaskManage.dto;
 
-import com.TaskManage.enums.Role;
+import javax.management.relation.Role;
 
 public class RegisterRequest {
 

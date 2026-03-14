@@ -1,7 +1,8 @@
 package com.TaskManage.entity;
 
-import com.TaskManage.enums.Role;
 import jakarta.persistence.*;
+
+import javax.management.relation.Role;
 
 @Entity
 @Table(name = "users")
@@ -18,6 +19,8 @@ public class User {
 
     private String password;
 
+    @lombok.Setter
+    @lombok.Getter
     @Enumerated(EnumType.STRING)
     private Role role;
 
@@ -53,11 +56,4 @@ public class User {
         this.password = password;
     }
 
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
 }

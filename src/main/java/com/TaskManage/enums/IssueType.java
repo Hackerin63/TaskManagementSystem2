@@ -1,4 +1,7 @@
 package com.TaskManage.enums;
 
-public class IssueType {
+public enum IssueType {
+    EPICS,
+    STORIES,
+    SUB_TASKS
 }

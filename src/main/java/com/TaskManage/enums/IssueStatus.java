@@ -1,4 +1,7 @@
 package com.TaskManage.enums;
 
-public class IssueStatus {
+public enum IssueStatus {
+    TODO,
+    IN_PROGRESS,
+    DONE
 }
